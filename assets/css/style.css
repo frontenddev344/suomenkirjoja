@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    font-family: "Rufina", serif;
+    font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
     word-break: break-word;
@@ -54,13 +54,13 @@ ul li {
 a {
     display: inline-block;
     text-decoration: none;
-     font-family: "Rufina", serif;
+   font-family: "Poppins", sans-serif;
 }
 
 button,
 input[type=text],
 input[type=submit] {
-     font-family: "Rufina", serif;
+   font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -75,8 +75,9 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-.py-3{
-padding: 30px 0;
+
+.py-3 {
+    padding: 30px 0;
 }
 
 .py-5 {
@@ -199,6 +200,7 @@ h2.section-heading {
     color: #008080;
     margin: 0 auto;
 }
+
 /* Section Heading CSS End */
 
 /* Banner Section CSS Start */
@@ -254,6 +256,7 @@ h2.section-heading {
     line-height: 1.5;
     overflow: hidden;
 }
+
 /* Banner Section  CSS End */
 
 
@@ -263,21 +266,25 @@ h2.section-heading {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.home-menu-cards{
+
+.home-menu-cards {
     width: 23%;
     height: 100%;
     position: relative;
 }
-.home-menu-cards-image{
+
+.home-menu-cards-image {
     width: 100%;
     height: 350px;
     overflow: hidden;
 }
-.home-menu-cards-image img{
+
+.home-menu-cards-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .home-menu-cards-text {
     position: absolute;
     top: 50%;
@@ -288,21 +295,92 @@ h2.section-heading {
     width: 100%;
     height: 100%;
 }
-.home-menu-cards-text a{
+
+.home-menu-cards-text a {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home-menu-cards-text a h3{
+
+.home-menu-cards-text a h3 {
     font-size: 22px;
     color: #fff;
 }
 
-
-
 /* Home Menu Cards CSS End*/
+
+/* Home Editor Choice CSS Start */
+.editor-choice-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.editor-choice-card {
+    width: 32%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+img.pen-white {
+    height: 15px;
+    width: 15px;
+    object-fit: cover;
+}
+
+.editor-choice-card-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.editor-choice-card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.editor-choice-card-content {
+    position: absolute;
+    top: 100%;
+    color: #fff;
+    padding: 15px;
+    background-color: rgba(0 0 0/60%);
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.editor-choice-card:hover .editor-choice-card-content{
+    top: 40%;
+}
+
+.editor-choice-card-content h3 {
+    font-size: 22px;
+}
+
+.editor-choice-card-content h4 {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+
+
+/* Home Editor Choice CSS End */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* How We Compare CSS Start */
@@ -712,6 +790,7 @@ a.butn.blog-btn img {
     text-align: center;
     font-weight: 500;
 }
+
 .ssl-certificate img {
     max-width: 149px;
 }
@@ -1004,14 +1083,16 @@ a.butn.blog-btn img {
 
 /* Other Pages CSS Start */
 .privacy-policy-content-section span.heading-like,
-.terms-conditions-content-section span.heading-like ,.sub-pages span.heading-like{
+.terms-conditions-content-section span.heading-like,
+.sub-pages span.heading-like {
     color: #fa009f;
     font-weight: 700;
     font-size: 17px;
 }
 
 .privacy-policy-content-section,
-.terms-conditions-content-section,.sub-pages-content-section {
+.terms-conditions-content-section,
+.sub-pages-content-section {
     background-image: url("../images/other-pages-bg.png");
     background-position: center;
     background-size: cover;
@@ -1022,7 +1103,8 @@ a.butn.blog-btn img {
 
 
 .privacy-policy-group,
-.terms-conditions-group,.sub-pages-group {
+.terms-conditions-group,
+.sub-pages-group {
     margin-bottom: 35px;
     padding: 20px;
     box-shadow: 0px 0px 7px 4px #fa009f;
@@ -1030,26 +1112,30 @@ a.butn.blog-btn img {
     background-color: #330662;
 }
 
-.privacy-policy-group:last-child,.sub-pages-group:last-child {
+.privacy-policy-group:last-child,
+.sub-pages-group:last-child {
     margin-bottom: 0px;
 }
 
 .privacy-policy-group h3,
-.terms-conditions-group h3,.sub-pages-group h3 {
+.terms-conditions-group h3,
+.sub-pages-group h3 {
     font-size: 27px;
     margin-bottom: 10px;
     color: #fa009f;
 }
 
 .privacy-policy-group h4,
-.terms-conditions-group h4,.sub-pages-group h4 {
+.terms-conditions-group h4,
+.sub-pages-group h4 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #fff;
 }
 
 .privacy-policy-group p,
-.terms-conditions-group p,.sub-pages-group p {
+.terms-conditions-group p,
+.sub-pages-group p {
     margin-bottom: 10px;
     font-size: 17px;
     font-weight: 500;
@@ -1057,7 +1143,8 @@ a.butn.blog-btn img {
 }
 
 .privacy-policy-group ul li,
-.terms-conditions-group ul li,.sub-pages-group ul li {
+.terms-conditions-group ul li,
+.sub-pages-group ul li {
     margin-bottom: 10px;
     list-style-type: disc;
     margin-left: 17px;
@@ -1065,19 +1152,22 @@ a.butn.blog-btn img {
 }
 
 .privacy-policy-group h3 a,
-.terms-conditions-group h3 a,.sub-pages-group h3 a {
+.terms-conditions-group h3 a,
+.sub-pages-group h3 a {
     color: #fa009f;
     transition: 0.3s all ease-in-out;
 }
 
 .privacy-policy-group h3 a:hover,
-.terms-conditions-group h3 a:hover,.sub-pages-group h3 a:hover {
+.terms-conditions-group h3 a:hover,
+.sub-pages-group h3 a:hover {
     color: red;
     transform: translateX(2px);
 }
 
 .privacy-policy-group p a,
-.terms-conditions-group p a,.sub-pages-group p a {
+.terms-conditions-group p a,
+.sub-pages-group p a {
     color: #cf2d5e;
     font-weight: 600;
     font-size: 17px;
@@ -1085,13 +1175,15 @@ a.butn.blog-btn img {
 }
 
 .privacy-policy-group p a:hover,
-.terms-conditions-group p a:hover ,.sub-pages-group p a:hover {
+.terms-conditions-group p a:hover,
+.sub-pages-group p a:hover {
     color: red;
     transform: translateX(2px);
 }
 
 .privacy-policy-group ul,
-.terms-conditions-group h3 ul,.sub-pages-group ul {
+.terms-conditions-group h3 ul,
+.sub-pages-group ul {
     margin: 10px auto;
 }
 
@@ -1246,6 +1338,7 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
+
 /* Contact Form CSS Start */
 
 
@@ -1304,4 +1397,5 @@ fieldset {
     color: #cf2d5e;
     background-color: #fff;
 }
+
 /* Cookies CSS End */
