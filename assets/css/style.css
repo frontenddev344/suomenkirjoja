@@ -570,7 +570,13 @@ input.pages-signup-input {
 }
 
 
+
 /* Accordion CSS Start */
+#faq-heading{
+    color: #fff;
+}
+
+
 .accordion {
     background-color: #222222;
     border-radius: 0px;
@@ -622,9 +628,9 @@ input.pages-signup-input {
 
 .accordion .top .text {
     font-size: 1.125rem;
-    font-weight: 600;
     white-space: wrap;
     color: #fff;
+    font-weight: 400;
 }
 
 .accordion .bottom .text p {
@@ -682,14 +688,25 @@ input.pages-signup-input {
     grid-template-rows: .1fr 1fr
 }
 
-.accordion:has(input:checked) .top img {
-    transform: rotateZ(45deg)
-}
-
 .accordion-wrap {
     margin-top: 3.75rem;
 }
+.accordion:has(input:checked) .top img {
+    transform: rotateZ(180deg);
+  content: url("../images/minus-sign.png");
+  
+  
+  }
+  .accordion:has(input) .top img {
+  content: url("../images/plus.png");
+    width: 15px;
+    transition: all 0.3s linear;
+  
+  }
+
 /* Accordion CSS End */
+
+
 
 
 
