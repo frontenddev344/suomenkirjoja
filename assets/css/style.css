@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 /* Global CSS Start */
 
 * {
@@ -11,11 +16,11 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Rufina", serif;
     padding: 0;
     margin: 0;
     word-break: break-word;
-    background-color: #1f0644;
+    background-color: #e5e2e2;
 }
 
 h1,
@@ -24,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     line-height: 1.5;
 }
@@ -50,13 +55,13 @@ ul li {
 a {
     display: inline-block;
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+     font-family: "Rufina", serif;
 }
 
 button,
 input[type=text],
 input[type=submit] {
-    font-family: "Open Sans", sans-serif;
+     font-family: "Rufina", serif;
 }
 
 img {
@@ -104,14 +109,14 @@ padding: 30px 0;
 
 
 /*Header CSS Start */
-.logo img {
+.top-logo img {
     text-align: center;
     width: 100%;
     max-width: 300px;
     vertical-align: middle;
 }
 
-.site-header {
+.header {
     position: sticky;
     top: 0;
     left: 0;
@@ -120,14 +125,10 @@ padding: 30px 0;
     margin: 0 auto;
     z-index: 9999;
     transition: all 0.3s ease-in-out;
-    background-image: url("../images/newsletter-bg.png");
+    background-color: #222222;
 }
 
-.site-header.fixed-header {
-    background-color: #1f0644;
-}
-
-.main-navbar ul {
+.main-menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +143,7 @@ padding: 30px 0;
     padding: 10px 0;
 }
 
-.main-navbar ul li a {
+.main-menu ul li a {
     padding: 10px;
     display: inline-block;
     text-align: center;
@@ -155,10 +156,10 @@ padding: 30px 0;
     color: #fff;
 }
 
-.main-navbar ul li a:after {
+.main-menu ul li a:after {
     display: block;
     content: '';
-    border-bottom: solid 2px #fa009f;
+    border-bottom: solid 2px #fff;
     transition: all 300ms ease-in-out;
     position: absolute;
     right: 0;
@@ -166,14 +167,14 @@ padding: 30px 0;
     width: 0%;
 }
 
-.main-navbar ul li a:hover:after,
-.main-navbar ul li a.active:after {
+.main-menu ul li a:hover:after,
+.main-menu ul li a.active:after {
     width: 100%;
 }
 
-.main-navbar ul li a:hover,
-.main-navbar ul li a.active {
-    color: #fa009f;
+.main-menu ul li a:hover,
+.main-menu ul li a.active {
+    color: #fff;
 }
 
 .close-icon {
@@ -182,7 +183,7 @@ padding: 30px 0;
 
 .menu-icon {
     display: none;
-    color: #fa009f;
+    color: #fff;
     width: 30px;
     text-align: right;
     cursor: pointer;
@@ -197,7 +198,7 @@ padding: 30px 0;
 h2.section-heading {
     font-size: 40px;
     line-height: 1.5;
-    color: #fa009f;
+    color: #000;
     margin: 0 auto;
 }
 
