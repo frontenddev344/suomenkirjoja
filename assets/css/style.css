@@ -20,6 +20,7 @@ body {
     padding: 0;
     margin: 0;
     word-break: break-word;
+    /* background-color: #d5d4d4; */
 }
 
 h1,
@@ -54,13 +55,13 @@ ul li {
 a {
     display: inline-block;
     text-decoration: none;
-   font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 button,
 input[type=text],
 input[type=submit] {
-   font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -112,7 +113,7 @@ img {
 .top-logo img {
     text-align: center;
     width: 100%;
-    max-width: 300px;
+    max-width: 270px;
     vertical-align: middle;
 }
 
@@ -311,156 +312,99 @@ h2.section-heading {
 
 /* Home Menu Cards CSS End*/
 
-/* Home Editor Choice CSS Start */
-.editor-choice-card-wrapper {
+
+/* Home Books Cards CSS Start */
+.s1,
+.s2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.editor-choice-card {
-    width: 32%;
-    height: 400px;
+.home-books-card {
     overflow: hidden;
     position: relative;
+    transition: 0.4s all ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 15px;
+    border-radius: 10px;
+}
+.home-books-card:hover{
+    transform: translateY(-4px);
+    box-shadow:#008080 0px 3px 20px 2px;
 }
 
-img.pen-white {
+.s1 .home-books-card {
+    width: 32%;
+    height: 430px;
+}
+
+.s1 .pen-white,
+.s2 .pen-white {
     height: 15px;
     width: 15px;
     object-fit: cover;
 }
 
-.editor-choice-card-image {
+.s1 .home-books-card-image,
+.s2 .home-books-card-image {
     height: 100%;
     width: 100%;
     overflow: hidden;
 }
 
-.editor-choice-card-image img {
+.s1 .home-books-card-image img,
+.s2 .home-books-card-image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.editor-choice-card-content {
+.home-books-card-content {
     position: absolute;
     top: 100%;
     color: #fff;
     padding: 15px;
     background-color: rgba(0 0 0/60%);
     height: 100%;
-    transition: all 0.5s ease-in-out;
-}
-.editor-choice-card:hover .editor-choice-card-content{
-    top: 40%;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
 }
 
-.editor-choice-card-content h3 {
+.s1 .home-books-card:hover .home-books-card-content {
+    top: 30%;
+}
+
+.home-books-card-content h3 {
     font-size: 22px;
 }
 
-.editor-choice-card-content h4 {
+.home-books-card-content h4 {
     font-size: 16px;
     margin: 15px 0;
 }
 
-
-
-/* Home Editor Choice CSS End */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* How We Compare CSS Start */
-
-.how-we-compare-section {
-    background-image: url("../images/how-we-compare-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.how-we-compare-cards-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-.how-we-compare-cards {
-    padding: 20px;
-    background: #330662;
-    box-shadow: inset 0px 0px 10px #00a2ff;
-    transition: all .5s ease-in;
-    border-radius: 10px;
-    overflow: hidden;
-    min-height: 320px;
-    width: 32%;
-    border-radius: 10px;
-    display: block;
-    transition: all .3s ease-out;
-}
-
-.how-we-compare-cards:hover {
-    background-position: 0 0;
-    background-position: left bottom;
-    box-shadow: inset 0px 0px 10px 7px #fea036;
-    color: #fff;
-
-}
-
-
-.how-we-compare-cards-wrapper>p {
+.s1 .cards-external-btn, .s2 .cards-external-btn {
     color: #000;
-    max-width: 800px;
-    margin: 0 auto;
-    font-weight: 500;
+    background: #ffd700;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: 600;
 }
 
-.how-we-compare-icons img {
-    height: 70px;
-    width: 70px;
-    object-fit: cover;
+.s1 .cards-external-btn:hover,
+.s2 .cards-external-btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
-.how-we-compare-content h4 {
-    color: #fa009f;
-    padding: 20px 0;
-    font-size: 20px;
+/* Home Books Cards CSS End */
+
+/* Home Page signup CSS Start */
+.pages-signup-section {
+    background-color: #222222;
 }
 
-.how-we-compare-content p {
-    color: #fff;
-}
-
-/* How We Compare CSS Start */
-
-
-
-/* Home Page newsletter CSS Start */
-.pages-newsletter-section {
-    background-color: #330662;
-    background-position: center;
-    background-image: url("../images/newsletter-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid #fa009f;
-}
-
-.pages-newsletter-wrapper {
+.pages-signup-wrapper {
     text-align: center;
     padding: 30px 0;
     background-color: transparent;
@@ -468,25 +412,24 @@ img.pen-white {
     border-radius: 20px;
 }
 
-.pages-newsletter-wrapper h3 {
+.pages-signup-wrapper h3 {
     padding: 0 10px;
 }
 
-.pages-newsletter-input-wrapper {
+.pages-signup-input-wrapper {
     padding-top: 20px;
     margin: 0 auto;
 }
 
-input.pages-newsletter-input {
+input.pages-signup-input {
     width: 40%;
     display: inline-block;
     font-size: 16px;
     padding: 13px 25px;
     outline: none;
-    border: 1px solid #fff;
+    border: 1px solid #666;
     line-height: 20px;
-    border-radius: 25px 0 0 25px;
-    font-weight: 600;
+    border-radius: 10px 0 0 10px;
 }
 
 .butn {
@@ -494,215 +437,271 @@ input.pages-newsletter-input {
     padding: 13px 25px;
     font-size: 16px;
     outline: none;
-    font-weight: 600;
     border: 1px solid transparent;
     transition: 0.3s all ease-in-out;
     line-height: 20px;
 }
 
-.pages-newsletter-submit-button {
+.pages-signup-submit-button {
     color: #fff;
     margin-left: 5px;
-    border-radius: 0 25px 25px 0;
-    box-shadow: inset 0px 0px 10px 3px #fea036;
+    border-radius: 0 10px 10px 0;
+    background: #008080;
 }
 
-.pages-newsletter-submit-button:hover {
-    box-shadow: inset 0px 0px 10px 3px #00a2ff;
+.pages-signup-submit-button:hover {
+    background-color: #fff;
+    color: #008080;
 }
 
-.pages-newsletter-wrapper h3 {
+.pages-signup-wrapper h3 {
     font-size: 30px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto 20px auto;
     line-height: normal;
     font-weight: 700;
     color: #fff;
 }
+/* Home Page signup CSS End */
 
-/* Home Page newsletter CSS End */
-
-
-/* Home Page Blog Cards CSS Start */
-.pages-blog-cards-section {
-    background-image: url("../images/blog-cards-section-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Best Seller CSS Start */
+.s2 .home-books-card {
+    height: 350px;
+    width: 24%;
 }
+.s2 .home-books-card:hover .home-books-card-content {
+    top: 40%;
+}
+/* Best Seller CSS Start */
 
-.pages-blog-cards-wrapper {
+.home-why-choose-us-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
-.blog-cards {
-    width: 31%;
-    position: relative;
-    transition: 0.3s all ease-out;
-    overflow: hidden;
+.home-why-choose-us-cards {
+    width: 32%;
+    padding: 20px;
+    margin-bottom: 25px;
     border-radius: 10px;
-    box-shadow: 0px 0px 7px 4px #fa009f;
-}
-
-.blog-cards:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 0px 7px 4px #fea036;
-}
-
-.blog-cards-image {
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
-}
-
-.blog-cards-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: 0.4s all ease-in-out;
-}
-
-.blog-cards:hover .blog-cards-image img {
-    transform: scale(1.05);
-}
-
-.blog-cards-text {
-    position: absolute;
-    bottom: 0px;
-    background-color: #330662;
-    color: #fff;
-    width: 100%;
-    min-height: 160px;
-}
-
-.blog-cards-text h4 {
-    padding: 10px;
-}
-
-.blof-cards-btn {
-    padding: 20px 10px;
-}
-
-.blog-btn {
-    box-shadow: inset 0px 0px 10px 1px #fea036;
-    color: #fff;
-    border-radius: 10px;
-    padding: 13px 40px;
-    display: inline-flex;
-    align-items: center;
-}
-
-.blog-btn:hover {
-    box-shadow: inset 0px 0px 10px 1px #00a2ff;
-}
-
-a.butn.blog-btn img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    object-fit: cover;
-}
-
-/* Home Page Blog Cards CSS Start */
-
-/* Home Page Accordion CSS Start */
-.accordion {
-    width: 100%;
-
-}
-
-.accordion-item {
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-    overflow: hidden;
+    background-color:#222222;
     border-radius: 8px;
+    border: 5px solid #222222;
+    overflow: hidden;
+    position: relative;
+    /* transition: color 0.5s, box-shadow 0.3s; */
+    transition: all 0.4s ease-in-out;
+    text-align: center;
 }
 
-.accordion-header {
-    background-image: url("../images/accordion-items-bg.png");
-    background-repeat: no-repeat;
-    cursor: pointer;
-    padding: 15px 20px;
-    text-align: left;
-    border: none;
+.home-why-choose-us-cards::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
+    background: #fff;
+    transform: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.home-why-choose-us-cards:hover::before {
+    transform: translateY(0);
+}
+
+.home-why-choose-us-cards:hover {
+    color: #000;
+    z-index: 10;
+}
+
+
+
+
+.rate-cards-icon i {
+    margin-bottom: 10px;
+}
+
+.home-why-choose-us-cards h3 {
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.home-why-choose-us-cards p {
+    color: #fff;
+}
+.home-why-choose-us-cards:hover h3,
+.home-why-choose-us-cards:hover p,
+.home-why-choose-us-cards:hover .rate-icon
+ {
+    color: #000;
+}
+
+
+.rate-icon {
+    display: inline-flex !important;
+    justify-content: center;
     align-items: center;
-    outline: none;
-    transition: background-color 0.3s ease;
-    font-weight: 700;
-    font-size: 17px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 20px;
+    border-radius: 5px;
     color: #fff;
 }
 
-.accordion-header:hover {
-    background-color: #ddd;
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.1);
+    }
 }
 
-.accordion-content {
-    height: 0;
+.bounce {
+    animation: bounce 3s infinite;
+}
+
+
+/* Accordion CSS Start */
+.accordion {
+    background-color: #222222;
+    border-radius: 0px;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 0fr;
     overflow: hidden;
-    opacity: 0;
-    transition: height 0.5s ease, opacity 0.5s ease;
-    padding: 0 15px;
+    transition: grid-template-rows .3s cubic-bezier(.19, 1, .22, 1);
+    margin: .75rem 0
 }
 
-.accordion-content p {
-    margin: 10px 0;
+.accordion .top {
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .9375rem;
+    display: flex;
+    position: relative
+}
+
+.accordion .top .text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    white-space: wrap;
+    color: #ffffff;
+}
+
+.accordion .top img {
+    width: 1.5rem;
+    align-self: flex-start;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
+    filter: brightness(0) invert(1);
+}
+
+.accordion .top input {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+    background: none;
+}
+
+.accordion .top .text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    white-space: wrap;
     color: #fff;
 }
 
-.accordion-header.active+.accordion-content {
-    opacity: 1;
+.accordion .bottom .text p {
+    padding: 10px 0;
 }
 
-.icon {
-    font-size: 24px;
-    font-weight: 700;
-    transition: transform 0.3s ease;
-    min-width: 20px;
+.accordion .top img {
+    width: 1.5rem;
+    align-self: flex-start;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
+    filter: brightness(0) invert(1);
 }
 
-.accordion-header.active .icon {
-    transform: rotate(180deg);
+.accordion .top input {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+    background: none;
 }
 
-/* Home Page Accordion CSS Start */
-
-/* Disclaimer Section CSS Start */
-.disclaimer {
-    background-image: url("../images/blog-cards-section-bg.png");
-    background-repeat: no-repeat;
-    background-position: 0% 0%;
-    background-size: cover;
-}
-
-
-.disclaimer-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0px 25px;
-    border-radius: 10px;
+.accordion .bottom {
+    padding-inline: 1.7rem;
     overflow: hidden;
-
+    transition: all .3s cubic-bezier(.19, 1, .22, 1);
+    background-color: #fff;
+    border: 1px solid #222222;
 }
 
-.disclaimer-wrapper h3 {
-    font-size: 30px;
-    color: #fa009f;
+.accordion .bottom .text {
+    margin-left: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
 }
 
-.disclaimer-wrapper p {
-    margin: 15px 0;
-    color: #fff;
+.accordion:has(input:checked) {
+    grid-template-rows: .1fr 1fr
 }
 
-/* Disclaimer Section CSS End */
+.accordion:has(input:checked) .top img {
+    transform: rotateZ(45deg)
+}
+
+.accordion-wrap {
+    margin-top: 3.75rem;
+}
+
+.accordion:has(input:checked) {
+    grid-template-rows: .1fr 1fr
+}
+
+.accordion:has(input:checked) .top img {
+    transform: rotateZ(45deg)
+}
+
+.accordion-wrap {
+    margin-top: 3.75rem;
+}
+/* Accordion CSS End */
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer CSS Start */
 .footer {
@@ -848,236 +847,15 @@ a.butn.blog-btn img {
 /* Social Icons CSS End */
 
 
-/* Pages CSS Start */
-.pages-banner-image {
-    height: 500px;
-    width: 100%;
-}
-
-.pages-banner-image img {
-    object-position: center;
-}
-
-.pages-banner-text h1 {
-    font-size: 50px;
-    animation: slideup 0.7s ease-in-out forwards;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-@keyframes slideup {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.pages-cards-section {
-    background-image: url("../images/category-cards-bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    overflow: hidden;
-}
-
-.pages-cards-outer-wrapper {
-    box-shadow: 0px 0px 7px 4px #fa009f;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 35px;
-    border: 1px solid #000;
-    transition: all 0.3s ease-in-out;
-
-    overflow: hidden;
-}
-
-.pages-cards-outer-wrapper:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 0px 7px 4px #fea036;
-}
-
-.pages-cards-outer-wrapper button {
-    margin: 15px auto;
-}
-
-.pages-cards {
-    position: relative;
-}
-
-.pages-cards-image {
-    height: 400px;
-    width: 100%;
-}
-
-.pages-cards-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    object-position: center;
-}
-
-.pages-cards-content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0 0 0/75%);
-    background-blend-mode: multiply;
-    inset: 0;
-}
-
-.pages-cards-content h3,
-.pages-cards-content h4,
-.pages-cards-content ul li {
-    color: #fff;
-}
-
-.pages-card-content-r1 {
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.pages-card-content-r2 {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 30px;
-    flex-wrap: wrap;
-}
-
-.pages-cards-content-r21,
-.pages-cards-content-r22 {
-    width: 48%;
-}
-
-.pages-card-content-r1 h3 {
-    font-size: 30px;
-}
-
-.pages-card-content-r1 span {
-    margin-left: 20px;
-    display: inline-block;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 700;
-}
 
 
-.pages-card-content-r2 h3 {
-    font-size: 25px;
-    margin-bottom: 15px;
-}
 
-.pages-card-content-r2 ul li {
-    font-weight: 500;
-    margin-bottom: 6px;
-    display: flex;
-    margin-bottom: 10px;
-}
 
-.cards-button {
-    background-color: #330662;
-    padding: 20px;
-    text-align: center;
-}
 
-.cards-external-link-btn {
-    box-shadow: inset 0px 0px 10px 3px #fea036;
-    color: #fff;
-    border-radius: 10px;
-    padding: 13px 40px;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-}
 
-.cards-external-link-btn:hover {
-    box-shadow: inset 0px 0px 10px 3px #fa009f;
-}
 
-.pages-link-btn:hover {
-    background: #fff;
-    color: #000;
-    border-color: #000;
-}
 
-.check-icon {
-    font-size: 16px;
-    min-width: 20px;
-}
 
-.uncheck-icon {
-    font-size: 14px;
-    min-width: 20px;
-}
-
-.list-icon {
-    background-color: #fa009f;
-    display: inline-flex !important;
-    width: 25px;
-    height: 25px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    line-height: 25px;
-    margin-right: 12px;
-    min-width: 25px;
-    color: #fff;
-}
-
-.blog-pages-content-section {
-    background-image: url("../images/blog-content-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.blog-pages-group {
-    box-shadow: 0px 0px 7px 4px #00a2ff;
-    margin-bottom: 35px;
-    padding: 20px;
-    color: #fff;
-    border-radius: 10px;
-    background-color: #330662;
-    background-image: url("../images/blog-cards-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-.blog-pages-group h3 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.blog-pages-group ul li {
-    list-style: disc;
-    margin-left: 17px;
-    margin-top: 5px;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-}
-
-.blog-banner-text h1 {
-    font-size: 40px;
-}
-
-.blog-banner-image {
-    height: 450px;
-}
-
-.blog-banner-text h1 {
-    font-size: 30px;
-    max-width: 700px;
-    margin: 0 auto;
-}
 
 /* Pages CSS End */
 
