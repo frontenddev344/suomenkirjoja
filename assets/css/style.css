@@ -80,6 +80,9 @@ img {
 .py-3 {
     padding: 30px 0;
 }
+.pb-3 {
+    padding-bottom: 30px 0;
+}
 
 .py-5 {
     padding: 50px 0;
@@ -706,96 +709,86 @@ input.pages-signup-input {
 
 /* Accordion CSS End */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer CSS Start */
 .footer {
-    background-image: url("../images/footer-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 0%;
-    border-top: 1px solid #fff;
+    width: 100%;
+    background-color: #222222;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .logo-bottom img {
     width: 100%;
-    max-width: 300px;
-    vertical-align: middle;
+    max-width: 270px;
+}
+.footer-items {
+    width: 30%;
 }
 
-.logo-bottom {
-    margin-bottom: 30px;
-}
-
-.footer-wrapper a {
+.footer-items h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
     color: #fff;
+    text-align: left;
 }
-
-.links-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-items .social-icons {
     width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin: 15px auto;
 }
 
-.links {
-    width: 75%
+.footer-items ul li a {
+    padding: 3px 0;
 }
 
-.social {
-    width: 25%;
-}
-
-.links a {
-    margin: 0 15px;
+.footer .footer-items ul li a {
+    transition: 0.6s all ease;
     font-size: 17px;
-    transition: 0.4s all ease-in-out;
-    padding-bottom: 20px;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
 }
 
-.links a:after {
+
+.footer .footer-items ul li a:after {
     display: block;
     content: '';
-    border-bottom: solid 1px #fa009f;
-    transition: all 0.3s ease-in-out;
+    border-bottom: solid 1px #fff;
+    transition: all 300ms ease-in-out;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 100%;
     width: 0%;
 }
 
-.links a:hover {
+.footer .footer-items ul li a:hover {
     transform: translateX(3px);
 }
 
-.links a:hover:after {
-    width: 100%;
-}
-
-.footer-social-icons {
-    width: 100%;
+.footer-icons {
+    min-width: 20px;
+    margin-right: 6px;
 }
 
 
-.links a:hover {
-    color: #fa009f;
+.footer-items ul li a:hover:after {
+    width: 100%;
+}
+
+.ssl-certificate img {
+    max-width: 160px;
 }
 
 .copyright {
+    padding: 15px 0;
     text-align: center;
     margin: auto 0;
     border-top: 1px solid #fff;
@@ -804,13 +797,9 @@ input.pages-signup-input {
 .copyright p {
     color: #fff;
     text-align: center;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 14px;
 }
-
-.ssl-certificate img {
-    max-width: 149px;
-}
-
 /* Footer CSS End */
 
 /* Social Icons CSS Start */
@@ -822,15 +811,13 @@ input.pages-signup-input {
     margin: 10px auto;
     width: 100%;
 }
-
 .social-icons i {
     width: 40px;
     height: 40px;
     border-radius: 10px;
     font-size: 17px;
-    background-color: #6e95f9;
-    background-color: #380fa0;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     line-height: normal;
     margin: 0 5px;
     transition: 0.3s all ease-in-out;
@@ -838,27 +825,24 @@ input.pages-signup-input {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-
 }
 
 .social-icons i:hover {
     transform: translateY(-2px);
     color: #fff;
+    box-shadow: #fff 0px 4px 8px;
 }
 
 .social-icons i.facebook:hover {
     background-color: #116af9;
-    box-shadow: #fa009f 0px 4px 8px;
 }
 
 .social-icons i.twitter:hover {
     background-color: #1da1f2;
-    box-shadow: #fa009f 0px 4px 8px;
 }
 
 .social-icons i.instagram:hover {
     background-color: #da1090;
-    box-shadow: #fa009f 0px 2px 4px;
 }
 
 /* Social Icons CSS End */
