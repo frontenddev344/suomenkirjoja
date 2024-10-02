@@ -1,0 +1,912 @@
+@media screen and (max-width:1200px) {
+
+    .main-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        padding: 50px;
+        background-color: #000;
+        transform: translateX(100%);
+        transition: all 0.3s linear;
+        z-index: 100;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .menuToggle .main-navbar {
+        transform: translateX(0);
+        justify-content: flex-start;
+    }
+
+    .main-navbar ul {
+        flex-direction: column;
+
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        color: #fff;
+        text-align: end;
+        z-index: 55;
+    }
+
+
+    .banner-text h1 {
+        font-size: 60px;
+    }
+
+    .banner-text h3 {
+        font-size: 27px;
+        max-width: 800px;
+    }
+
+    .how-we-compare-cards {
+        min-height: 375px;
+    }
+
+    .pages-banner-text h1 {
+        font-size: 50px;
+    }
+
+    .blog-cards-image {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:991px) {
+   
+    .banner-text h1 {
+        font-size: 55px;
+    }
+
+    .banner-text h3 {
+        font-size: 25px;
+        max-width: 700px;
+    }
+
+    .accordion-content p {
+        font-size: 15px;
+    }
+
+    .pages-intro-text-wrapper p {
+        font-size: 15px;
+    }
+
+    .home-page-category-cards {
+        height: 370px;
+        box-shadow: 0px 0px 10px 2px #fa009f;
+    }
+
+    .how-we-compare-content p {
+        font-size: 15px;
+    }
+
+    .how-we-compare-cards {
+        min-height: 340px;
+        width: 48%;
+    }
+
+    .pages-newsletter-wrapper h3 {
+        font-size: 26px;
+        max-width: 700px;
+    }
+
+    input.pages-newsletter-input {
+        width: 45%;
+        font-size: 15px;
+        padding: 12px 25px;
+    }
+
+    .pages-newsletter-submit-button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .blog-cards {
+        width: 48%;
+        margin-bottom: 35px;
+    }
+
+    .blog-cards:last-child {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .blog-cards-text h4 {
+        font-size: 20px;
+    }
+
+
+    .disclaimer-wrapper p {
+        font-size: 15px;
+    }
+
+    .links a {
+        margin: 0 10px 0 0;
+        font-size: 17px;
+    }
+
+    .pages-card-content-r1 {
+        padding: 20px;
+    }
+
+    .pages-card-content-r2 {
+        padding: 0px 20px;
+    }
+
+    .pages-card-content-r2 ul li {
+        font-size: 15px;
+    }
+
+    .pages-cards-image {
+        height: 330px;
+    }
+
+    .blog-pages-group h3 {
+        font-size: 23px;
+    }
+
+    .blog-pages-group p {
+        font-size: 15px;
+    }
+
+    .copyright p {
+        font-size: 15px;
+    }
+
+    /* Other Pages CSS Start */
+    .privacy-policy-group h3,
+    .terms-conditions-group h3,.sub-pages-group h3 {
+        font-size: 26px;
+    }
+
+    .privacy-policy-group h4,
+    .terms-conditions-group h4,.sub-pages-group h4 {
+        font-size: 16px;
+    }
+    /* Other Pages CSS End */
+      /* Contact Us Page CSS Start */
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #contact textarea {
+    height: 90px;
+  }
+
+  .contact-us-group a img {
+    height: 25px;
+    width: 25px;
+  }
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact select {
+  padding: 10px;
+  font-size: 15px;
+}
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact select, #contact button[type="submit"] {
+  width: 100%;
+}
+#contact button[type="submit"] {
+  width: 40%;
+  padding: 13px 20px;
+}
+  /* Contact Us Page CSS Start */
+
+    /* Cookies CSS Start */
+    .info p {
+        font-size: 14px;
+    }
+
+    .button {
+        width: calc(55% / 2 - 10px);
+        font-size: 14px;
+    }
+
+    /* Cookies CSS End */
+
+
+}
+
+
+
+
+@media screen and (max-width:767px) {
+    .banner-image {
+        height: 420px;
+    }
+
+    .banner-text h1 {
+        font-size: 50px;
+    }
+
+    .banner-text h3 {
+        font-size: 22px;
+    }
+
+    .home-page-category-cards {
+        height: 320px;
+        box-shadow: 0px 0px 10px 0px #fa009f;
+    }
+
+    h2.section-heading {
+        font-size: 29px;
+        max-width: 510px;
+    }
+
+    .how-we-compare-icons img {
+        height: 55px;
+        width: 55px;
+    }
+
+    .how-we-compare-cards {
+        min-height: 380px;
+        width: 48%;
+    }
+
+    .pages-newsletter-wrapper h3 {
+        font-size: 23px;
+        max-width: 550px;
+    }
+
+    input.pages-newsletter-input {
+        width: 55%;
+    }
+
+    .blog-cards {
+        width: 100%;
+    }
+
+    .blog-cards-text h4 {
+        font-size: 20px;
+    }
+
+    .blog-cards-image {
+        height: 430px;
+    }
+
+    .accordion-header {
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 22px;
+    }
+
+    .disclaimer-wrapper h3 {
+        font-size: 27px;
+    }
+
+    .logo-bottom {
+        text-align: left;
+    }
+
+    .links {
+        width: 60%;
+    }
+
+    .social {
+        width: 40%;
+    }
+
+    .links a {
+        font-size: 17px;
+        display: block;
+        padding-bottom: 15px;
+    }
+
+    .pages-cards-content {
+        position: static;
+        background: #330662;
+    }
+
+    .pages-cards-image {
+        height: 280px;
+    }
+
+    .pages-intro {
+        padding: 30px 0px;
+    }
+
+    .pages-cards-section h2 {
+        margin: 0px auto 30px;
+    }
+
+    .pages-banner-text h1 {
+        font-size: 34px;
+    }
+
+    .pages-card-content-r1 h3 {
+        font-size: 25px;
+    }
+
+    .pages-card-content-r1 span {
+        width: 30%;
+
+    }
+
+    .pages-card-content-r2 h3 {
+        font-size: 22px;
+    }
+
+    .blog-banner-text h1 {
+        font-size: 27px;
+    }
+
+    .blog-banner-image {
+        height: 330px;
+    }
+
+
+    .copyright p {
+        font-size: 14px;
+    }
+
+    /* Other Pages CSS Start */
+    .privacy-policy-group h3,
+    .terms-conditions-group h3,.sub-pages-group h3 {
+        font-size: 25px;
+    }
+
+    /* Other Pages CSS End */
+
+    /* Contact Us Page CSS Start */
+    .form-image,
+    .form-container {
+        width: 100%;
+    }
+
+    .contact-us-group ul li a,
+    .contact-us-group p a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact select {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact select,
+    #contact button[type="submit"] {
+        width: 100%;
+    }
+
+    #contact button[type="submit"] {
+        width: 30%;
+        padding: 13px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .contact-us-group a img {
+        height: 22px;
+        width: 22px;
+    }
+    .form-container {
+        margin-top: 30px;
+    }
+
+    /* Contact Us Page CSS Start */
+
+
+    /* Cookies CSS Start */
+    .wrapper {
+        padding: 20px 10px;
+    }
+
+    .info p {
+        font-size: 13px;
+    }
+
+    .button {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    /* Cookies CSS End */
+
+
+
+
+
+}
+
+@media screen and (max-width:575px) {
+    .logo img {
+        max-width: 250px;
+    }
+
+    .banner-image {
+        height: 360px;
+    }
+
+    .banner-text h1 {
+        font-size: 40px;
+    }
+
+    .banner-text h3 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .pages-intro-text-wrapper p {
+        font-size: 14px;
+    }
+
+    .home-page-category-cards {
+        width: 100%;
+        height: 260px;
+    }
+
+    .blog-cards-image {
+        height: 390px;
+    }
+
+
+    .how-we-compare-content p {
+        font-size: 14px;
+    }
+
+    .how-we-compare-cards {
+        width: 48%;
+    }
+
+    h2.section-heading {
+        font-size: 28px;
+        max-width: 420px;
+    }
+
+    .how-we-compare-cards {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .how-we-compare-content h4 {
+        font-size: 24px;
+    }
+
+    .pages-newsletter-wrapper {
+        padding: 0;
+    }
+
+    input.pages-newsletter-input {
+        width: 90%;
+        font-size: 14px;
+        padding: 11px 20px;
+        border-radius: 25px;
+    }
+
+    .pages-newsletter-submit-button {
+        border-radius: 25px;
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    .pages-newsletter-wrapper h3 {
+        max-width: 480px;
+    }
+
+    .accordion-content p {
+        font-size: 14px;
+    }
+
+    .blog-btn {
+        font-size: 15px;
+    }
+
+    .accordion-header {
+        font-size: 15px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    button.accordion-header span:first-child {
+        max-width: 400px;
+    }
+
+    .disclaimer-wrapper {
+        padding: 5px;
+    }
+
+    .disclaimer-wrapper h3 {
+        font-size: 25px;
+    }
+
+    .disclaimer-wrapper p {
+        font-size: 14px;
+    }
+
+    .links a {
+        margin: 0;
+        padding-bottom: 10px;
+        display: block;
+        font-size: 17px;
+    }
+
+    .links a:last-child {
+        padding-bottom: 0;
+    }
+
+    .links-social {
+        align-items: flex-start;
+    }
+
+    .logo-bottom img {
+        max-width: 250px;
+    }
+
+    .pages-card-content-r2 ul li {
+        font-size: 14px;
+    }
+
+    .pages-cards-image {
+        height: 230px;
+    }
+
+    .pages-card-content-r1 h3 {
+        font-size: 23px;
+    }
+
+    .pages-card-content-r1 span {
+        font-size: 23px;
+        width: 30%;
+    }
+
+
+    .pages-card-content-r1 {
+        padding: 10px;
+    }
+
+    .pages-card-content-r2 {
+        padding: 0px 10px;
+        gap: 20px;
+    }
+
+    .pages-card-content-r2 h3 {
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .pages-card-content-r2 ul li {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .pages-cards-content-r21,
+    .pages-cards-content-r22 {
+        width: 100%;
+    }
+
+    .blog-pages-group h3 {
+        font-size: 21px;
+    }
+
+    .blog-pages-group p {
+        font-size: 14px;
+    }
+
+    .blog-banner-text h1 {
+        font-size: 24px;
+        max-width: 460px;
+    }
+
+    .blog-banner-image {
+        height: 290px;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+
+    /* Other Pages CSS Start */
+    .privacy-policy-group h3,
+    .terms-conditions-group h3,.sub-pages-group h3 {
+        font-size: 23px;
+    }
+
+    .privacy-policy-group p,
+    .terms-conditions-group p ,.sub-pages-group p{
+        font-size: 15px;
+    }
+
+    /* Other Pages CSS End */
+
+    /* Contact Us Page CSS Start */
+    .contact-us-group h3 {
+        font-size: 40px;
+    }
+
+    .contact-us-group p,
+    .contact-us-group ul li {
+        font-size: 14px;
+    }
+
+    .contact-us-group ul li a,
+    .contact-us-group p a {
+        font-size: 15px;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact select {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    #contact button[type="submit"] {
+        width: 35%;
+        padding: 13px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #contact {
+        padding: 0;
+    }
+
+    .contact-us-group a img {
+        height: 20px;
+        width: 20px;
+    }
+
+  
+
+    /* Contact Us Page CSS End */
+
+    /* Cookies CSS Start */
+    .info p {
+        font-size: 13px;
+    }
+
+    .button {
+        width: calc(70% / 2 - 10px);
+        font-size: 13px;
+    }
+
+    /* Cookies CSS End */
+
+}
+
+@media screen and (max-width:480px) {
+    .logo img {
+        max-width: 215px;
+    }
+
+    .banner-image {
+        height: 310px;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+    }
+
+    .banner-text h3 {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    .home-page-category-cards {
+        height: 220px;
+    }
+
+    h2.section-heading {
+        font-size: 22px;
+        max-width: 290px;
+    }
+
+    .how-we-compare-content h4 {
+        font-size: 20px;
+    }
+
+    .pages-newsletter-wrapper h3 {
+        font-size: 20px;
+    }
+
+    input.pages-newsletter-input {
+        padding: 10px 20px;
+    }
+
+    .pages-newsletter-submit-button {
+        border-radius: 25px;
+        margin-top: 12px;
+        padding: 10px 30px;
+    }
+
+    .blog-cards-text h4 {
+        font-size: 15px;
+    }
+
+    .blog-cards-image {
+        height: 380px;
+    }
+
+    a.butn.blog-btn img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .accordion-header {
+        padding: 13px 10px;
+        font-size: 13px;
+    }
+
+    .icon {
+        font-size: 17px;
+        min-width: 30px;
+    }
+
+    button.accordion-header span:first-child {
+        max-width: 220px;
+    }
+
+    .disclaimer-wrapper h3 {
+        font-size: 22px;
+    }
+
+    .logo-bottom img {
+        max-width: 230px;
+    }
+
+    .links-social {
+        flex-direction: column;
+    }
+
+    .links,
+    .social {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        margin-bottom: 0;
+    }
+
+    .footer-social-icons {
+        text-align: left;
+    }
+
+    .links a {
+        font-size: 16px;
+    }
+
+    .pages-card-content-r2 {
+        flex-direction: column;
+    }
+
+    .pages-cards-image {
+        height: 220px;
+    }
+
+    .pages-card-content-r1 h3 {
+        font-size: 20px;
+    }
+
+    .pages-card-content-r1 span {
+        width: 30%;
+        font-size: 18px;
+    }
+
+    .blog-banner-text h1 {
+        font-size: 21px;
+        max-width: 320px;
+    }
+
+    .blog-banner-image {
+        height: 250px;
+    }
+
+    /* Other Pages CSS Start */
+    .privacy-policy-group h3,
+    .terms-conditions-group h3,.sub-pages-group h3 {
+        font-size: 20px;
+    }
+
+    .privacy-policy-group h4,
+    .terms-conditions-group h4 ,.sub-pages-group h4{
+        font-size: 17px;
+    }
+
+    .privacy-policy-group p,
+    .terms-conditions-group p,.sub-pages-group p {
+        font-size: 14px;
+    }
+
+    /* Other Pages CSS End */
+    /* Contact Us Page CSS Start */
+    #contact {
+        padding: 0;
+    }
+
+    .form-container {
+        padding: 30px 5px;
+    }
+
+    .contact-us-group h3 {
+        font-size: 35px;
+    }
+
+    .contact-us-group p,
+    .contact-us-group ul li {
+        font-size: 13px;
+    }
+
+    .contact-us-group ul li a,
+    .contact-us-group p a {
+        font-size: 14px;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact select {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #contact button[type="submit"] {
+        width: 40%;
+        padding: 12px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .contact-us-group a img {
+        height: 17px;
+        width: 17px;
+    }
+    /* Contact Us Page CSS End */
+
+    /* Cookies CSS Start */
+    .info p {
+        font-size: 12px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    .button {
+        width: calc(100% / 2 - 10px);
+        font-size: 13px;
+    }
+
+    /* Cookies CSS End */
+
+
+}
